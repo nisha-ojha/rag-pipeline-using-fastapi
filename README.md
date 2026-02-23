@@ -1,9 +1,8 @@
-**RAG Pipeline using FastAPI**
-
+## RAG Pipeline using FastAPI
 A Retrieval-Augmented Generation (RAG) backend built with FastAPI.
 This project performs PDF ingestion, text chunking, embedding generation, FAISS vector storage, and semantic similarity search via a REST API.
 
-**Features:**
+## Features:
 
  PDF document ingestion
 
@@ -19,6 +18,7 @@ This project performs PDF ingestion, text chunking, embedding generation, FAISS 
 
  Swagger UI documentation
 
+## Project Structure
  RAG-Pipeline/
 │
 ├── backend/
