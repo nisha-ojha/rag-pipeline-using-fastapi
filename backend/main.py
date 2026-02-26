@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from backend.rag_pipeline import RAGPipeline
 
 app = FastAPI()
+
 rag = RAGPipeline()
 
 
@@ -12,5 +13,5 @@ class ChatRequest(BaseModel):
 
 @app.post("/chat")
 def chat(request: ChatRequest):
-    context = rag.build_context(request.query)
-    return {"context": context}
+    answer = rag.generate_answer(request.query)
+    return {"response": answer}
